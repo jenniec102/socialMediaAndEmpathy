@@ -4,4 +4,112 @@
   margin: 0;
   padding: 0;
   font-family: 'Jost', sans-serif;
+  line-height: 2em;
+}
+
+p{
+  font-size: 1.1em;
+}
+
+h3{
+  font-size: 1.3em;
+}
+
+.nav ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5vh;
+  background-color: #FFC7C7; /* light pink */
+  margin-bottom: 5vh;
+  width: 100%;
+}
+
+.nav li{
+  list-style: none;
+}
+
+.nav a{
+  display: flex;
+  text-decoration: none;
+  color: black;
+  padding: 2vh;
+}
+
+.nav a:hover{
+  background-color: #FF8686; /*darker pink; */
+  color: white; /* text is white */
+}
+
+#home{
+  background-color: cornsilk;
+  /* #FFD6B9;  */
+  /* #FFE79B; /* pale yellow */ */
+  /* #FFC386; */
+}
+
+#desen{
+  height: 100vh;
+  background-image: linear-gradient(#FFC7C7, lightgray);
+  background-size: contain;
+}
+
+#increase .nav ul{
+  background-color: palevioletred;
+}
+
+#increase{
+  background-color: mediumvioletred;
+  /* #E190F0; */
+  /* lavender; */
+}
+
+#sources .nav ul{
+  background-color: #F0759E;
+  /* #F962A8; */
+}
+#sources{
+  background-color: #F05286;
+}
+
+.header{
+  grid-area: header;
+}
+
+.defin{
+  grid-area: defin;
+}
+
+.content{
+  grid-area: content;
+}
+
+.row{
+  grid-area: row;
+}
+
+.content2{
+  grid-area: content2;
+}
+
+.mainContent{
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-gap: 3vmin;
+  grid-template-areas: ". . header header header header . ."
+                       ". . . defin defin . . ."
+                       ". . content content content content . ."
+                       ". . row row row row . ."
+                       ". . content2 content2 content2 content2 . ."
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.row .with, .row .without{
+  width: 50%;
 }
