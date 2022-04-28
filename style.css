@@ -121,9 +121,17 @@ h3{
                        ". . content2 content2 content2 content2 . ."
 }
 
+.emph {
+  padding: 5vmin;
+  background-color: lightpink;
+  border-left: solid;
+  border-radius: 15vmin;
+}
+
 .row{
   display: flex;
   flex-direction: row;
+  gap: 5vmin;
   width: 100%;
 }
 
@@ -131,8 +139,17 @@ h3{
   width: 50%;
 }
 
+.ion-icon{
+  font-size: 50vh;
+}
+
 img{
   max-height: 50vh;
+}
+
+.increase{
+  height: 80vh;
+  margin-bottom: 10vh; 
 }
 
 #inc1{
@@ -165,8 +182,8 @@ img{
   grid-template-areas: ". . header header header header . ."
                        ". . content content content content . ."
                        ". . . arrow arrow . . . "
-                       ". inc1 inc1 inc1 . . . ."
-                       ". . . . inc2 inc2 inc2 ."
+                       ". inc1 inc1 inc1 inc1 inc1 inc1 ."
+                       ". . . inc2 inc2 inc2 inc2 ."
                        ". inc3 inc3 inc3 . . . ."
                        ". . . inc4 inc4 inc4 . ."
                        ". . inc5 inc5 inc5 . . ."
@@ -180,6 +197,14 @@ img{
 
 .incContent .content{
   height: 100vh;
+}
+
+.incContent .row p{
+  max-height: 100%;
+}
+
+.incContent .row img{
+  max-width: 60%;
 }
 
 /* referenced https://www.w3schools.com/howto/howto_css_arrows.asp */
@@ -201,7 +226,7 @@ img{
 
 .sourcesLinks{
   grid-area: links;
-  max-width: 100%; 
+  max-width: 100%;
 }
 
 .sourcesVids{
