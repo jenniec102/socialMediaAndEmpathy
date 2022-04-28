@@ -109,16 +109,26 @@ h3{
   grid-area: images;
 }
 
+.circles{
+  grid-area: circle;
+}
+
 .mainContent{
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-gap: 3vmin;
-  grid-template-areas: ". . header header header header . ."
+  /* grid-template-areas: ". . header header header header . ."
                        ". . . defin defin . . ."
                        ". . content content content content . ."
                        ". . row row row row . ."
                        ". . images images images images . ."
-                       ". . content2 content2 content2 content2 . ."
+                       ". . content2 content2 content2 content2 . ." */
+   grid-template-areas: ". circle header header header header . ."
+                        ". circle . defin defin . . ."
+                        ". circle content content content content . ."
+                        ". . row row row row . ."
+                        ". . images images images images . ."
+                        ". . content2 content2 content2 content2 . ."
 }
 
 .emph {
@@ -143,13 +153,24 @@ h3{
   font-size: 50vh;
 }
 
+.circles ul{
+  list-style: none;
+}
+.circles li{
+  height: 10vh;
+  width: 10vh;
+  background-color: pink; 
+  border: solid pink;
+  border-radius: 50%;
+}
+
 img{
   max-height: 50vh;
 }
 
 .increase{
   height: 80vh;
-  margin-bottom: 10vh; 
+  margin-bottom: 10vh;
 }
 
 #inc1{
