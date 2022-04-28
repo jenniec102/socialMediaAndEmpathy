@@ -43,7 +43,8 @@ h3{
 }
 
 #home{
-  background-color: cornsilk;
+  background-color: #fe7b7b;
+  /* cornsilk; */
   /* #FFD6B9;  */
   /* #FFE79B; /* pale yellow */ */
   /* #FFC386; */
@@ -51,26 +52,37 @@ h3{
 
 #desen{
   height: 100vh;
-  background-image: linear-gradient(#FFC7C7, lightgray);
+  background-image: linear-gradient(#FFC7C7, white);
   background-size: contain;
 }
 
 #increase .nav ul{
-  background-color: palevioletred;
+  /* background-color: white; */
+  /* palevioletred; */
 }
 
 #increase{
-  background-color: mediumvioletred;
+  /* background-color: mediumvioletred; */
   /* #E190F0; */
   /* lavender; */
+  /* used https://cssgradient.io/ */
+  height: 100vh;
+  background: rgb(255,255,255);
+  background-image: linear-gradient(#FFC7C7, #ff3c3c);
+  background-size: contain;
+  background-attachment: fixed;
 }
 
 #sources .nav ul{
-  background-color: #F0759E;
+  /* background-color: #F0759E; */
   /* #F962A8; */
 }
 #sources{
-  background-color: #F05286;
+  height: 100vh;
+  background-image: linear-gradient(#FFC7C7, white);
+  background-size: contain;
+  background-attachment: fixed;
+  /* background-color: #F05286; */
 }
 
 .header{
@@ -93,6 +105,10 @@ h3{
   grid-area: content2;
 }
 
+.images{
+  grid-area: images;
+}
+
 .mainContent{
   display: grid;
   grid-template-columns: repeat(8, 1fr);
@@ -101,6 +117,7 @@ h3{
                        ". . . defin defin . . ."
                        ". . content content content content . ."
                        ". . row row row row . ."
+                       ". . images images images images . ."
                        ". . content2 content2 content2 content2 . ."
 }
 
@@ -112,4 +129,90 @@ h3{
 
 .row .with, .row .without{
   width: 50%;
+}
+
+img{
+  max-height: 50vh;
+}
+
+#inc1{
+  grid-area: inc1;
+}
+#inc2{
+  grid-area: inc2;
+}
+#inc3{
+  grid-area: inc3;
+}
+#inc4{
+  grid-area: inc4;
+}
+#inc5{
+  grid-area: inc5;
+}
+#inc6{
+  grid-area: inc6;
+}
+.arrow{
+  grid-area: arrow;
+}
+
+.incContent{
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-gap: 3vmin;
+  margin-bottom: 20vh;
+  grid-template-areas: ". . header header header header . ."
+                       ". . content content content content . ."
+                       ". . . arrow arrow . . . "
+                       ". inc1 inc1 inc1 . . . ."
+                       ". . . . inc2 inc2 inc2 ."
+                       ". inc3 inc3 inc3 . . . ."
+                       ". . . inc4 inc4 inc4 . ."
+                       ". . inc5 inc5 inc5 . . ."
+                       ". . . inc6 inc6 inc6 . ."
+
+}
+
+.incContent .header{
+  text-align: center;
+}
+
+.incContent .content{
+  height: 100vh;
+}
+
+/* referenced https://www.w3schools.com/howto/howto_css_arrows.asp */
+.incContent .arrow{
+  display: flex;
+  justify-content: center;
+}
+
+.incContent .downArr{
+  border: solid;
+  border-width: 0 1vmin 1vmin 0;
+  padding: 3vmin;
+  transform: rotate(45deg);
+}
+
+.increase{
+  height:60vh;
+}
+
+.sourcesLinks{
+  grid-area: links;
+  max-width: 100%; 
+}
+
+.sourcesVids{
+  grid-area: sourceVid;
+}
+
+.sourcesContent{
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-gap: 3vmin;
+  grid-template-areas: ". . header header header header . ."
+                       ". . links links links links . ."
+                       ". . sourceVid sourceVid sourceVid sourceVid  . ."
 }
