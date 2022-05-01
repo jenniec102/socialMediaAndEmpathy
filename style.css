@@ -67,10 +67,11 @@ h3{
   /* lavender; */
   /* used https://cssgradient.io/ */
   height: 100vh;
-  background: rgb(255,255,255);
-  background-image: linear-gradient(#FFC7C7, #ff3c3c);
-  background-size: contain;
-  background-attachment: fixed;
+  background-color: #FB9D4A;
+  /* background: rgb(255,255,255); */
+  /* background-image: linear-gradient(#FFC7C7, #ff3c3c); */
+  /* background-size: contain; */
+  /* background-attachment: fixed; */
 }
 
 #sources .nav ul{
@@ -134,7 +135,6 @@ h3{
 .emph {
   padding: 5vmin;
   background-color: lightpink;
-  border-left: solid;
   border-radius: 15vmin;
 }
 
@@ -143,6 +143,10 @@ h3{
   flex-direction: row;
   gap: 5vmin;
   width: 100%;
+}
+
+.incContent .row {
+  align-items: center;
 }
 
 .row .with, .row .without{
@@ -159,7 +163,7 @@ h3{
 .circles li{
   height: 10vh;
   width: 10vh;
-  background-color: pink; 
+  background-color: pink;
   border: solid pink;
   border-radius: 50%;
 }
@@ -205,10 +209,10 @@ img{
                        ". . . arrow arrow . . . "
                        ". inc1 inc1 inc1 inc1 inc1 inc1 ."
                        ". . . inc2 inc2 inc2 inc2 ."
-                       ". inc3 inc3 inc3 . . . ."
-                       ". . . inc4 inc4 inc4 . ."
-                       ". . inc5 inc5 inc5 . . ."
-                       ". . . inc6 inc6 inc6 . ."
+                       ". inc3 inc3 inc3 inc3 inc3 . ."
+                       ". . inc4 inc4 inc4 inc4 inc4 ."
+                       ". inc5 inc5 inc5 inc5 inc5 . ."
+                       ". inc6 inc6 inc6 inc6 inc6 inc6 ."
 
 }
 
@@ -226,6 +230,7 @@ img{
 
 .incContent .row img{
   max-width: 60%;
+  border-radius: 5vmin;
 }
 
 /* referenced https://www.w3schools.com/howto/howto_css_arrows.asp */
@@ -239,6 +244,19 @@ img{
   border-width: 0 1vmin 1vmin 0;
   padding: 3vmin;
   transform: rotate(45deg);
+  animation-name: updown;
+  animation-duration: 1.6s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes updown{
+  from{
+    transform: translate(0) rotate(45deg);
+  }
+  to{
+    transform: translate(0, 3vmin) rotate(45deg);
+  }
 }
 
 .increase{
