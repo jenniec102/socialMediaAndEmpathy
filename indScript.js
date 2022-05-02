@@ -1,43 +1,38 @@
 // javascript for index.html
 
 // from https://github.com/dixonandmoe/rellax
+// initialize Rellax for class .rellax
 var rellax = new Rellax('.rellax', {
   center: true
 });
 
-// $('.parallax-window').parallax({
-//     // position: bottom bottom,
-//     bleed: 10
-// });
-
-// $('#pic2').parallax({
-//   imageSrc: 'https://jayclouse.com/wp-content/uploads/2018/02/9d13fa77-8778-45ba-8a49-4edc3ec818a2-1024x785-1.jpg',
-//   naturalWidth: 745,
-//   naturalHeight: 570,
-//   speed: 0.5,
-//   bleed: 10
-// });
-
-// $('#pic2').parallax({
-//   imageSrc: 'https://cdn.searchenginejournal.com/wp-content/uploads/2020/10/how-to-add-emojis-to-title-tags-meta-descriptions-in-wordpress-5f8efa328bf9d.png',
-//   naturalWidth: 745,
-//   naturalHeight: 570,
-//   speed: 0.5,
-//   bleed: 10
-// });
-//
-// $('#pic3').parallax({
-//   imageSrc: 'https://philadelphiapsychology.org/wp-content/uploads/2017/09/headlineImage.adapt_.1460.high_.facial_expression2_040414.1397364643241.jpg',
-//   naturalWidth: 745,
-//   naturalHeight: 570,
-//   speed: 0.5,
-//   bleed: 10
-// });
-
 // from https://simpleparallax.com/
+// initialize simpleParallax for parallax-pic class
 var image = document.getElementsByClassName('parallax-pic');
 new simpleParallax(image, {
   delay: 0.5,
   scale: 1.5,
   overflow: true,
 });
+
+// from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+// get top button
+btn = document.getElementById("topBtn");
+
+// show button when user scrolls down 100px
+window.onscroll = function(){scrollFunc()};
+
+// function to show button depending on user scrolling
+function scrollFunc(){
+  if(document.body.scrollTop > 150 || document.documentElement.scrollTop > 150){
+    btn.style.display = "block";
+  } else {
+    btn.style.display = "none";
+  }
+}
+
+// button's functionality to go to top of page
+function goToTop(){
+  document.body.scrollTop = 0; // works for Safari
+  document.documentElement.scrollTop = 0; // for chrome, firefox, etc.
+}
