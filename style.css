@@ -133,9 +133,20 @@ h3{
 }
 
 .emph {
-  padding: 5vmin;
+  padding: 8vmin;
+  margin: 3vmin 0 3vmin 0;
   background-color: lightpink;
   border-radius: 15vmin;
+}
+
+.pic{
+  display: flex;
+  justify-content: center;
+}
+
+.parallax-pic{
+    max-height: 50vh;
+    width: 90%;
 }
 
 .row{
@@ -153,10 +164,6 @@ h3{
   width: 50%;
 }
 
-.ion-icon{
-  font-size: 50vh;
-}
-
 .circles ul{
   list-style: none;
 }
@@ -170,6 +177,7 @@ h3{
 
 img{
   max-height: 50vh;
+  border-radius: 1vmin;
 }
 
 .increase{
