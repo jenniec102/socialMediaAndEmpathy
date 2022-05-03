@@ -113,9 +113,9 @@ h3{
   grid-area: images;
 }
 
-.circles{
+/* .circles{
   grid-area: circle;
-}
+} */
 
 /* .upArr{
   border: solid;
@@ -156,18 +156,18 @@ ion-icon {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-gap: 3vmin;
-  /* grid-template-areas: ". . header header header header . ."
+  grid-template-areas: ". . header header header header . ."
                        ". . . defin defin . . ."
                        ". . content content content content . ."
                        ". . row row row row . ."
                        ". . images images images images . ."
-                       ". . content2 content2 content2 content2 . ." */
-   grid-template-areas: ". circle header header header header . ."
+                       ". . content2 content2 content2 content2 . button"
+   /* grid-template-areas: ". circle header header header header . ."
                         ". circle . defin defin . . ."
                         ". circle content content content content . ."
                         ". circle row row row row . ."
                         ". circle images images images images . ."
-                        ". . content2 content2 content2 content2 . button"
+                        ". . content2 content2 content2 content2 . button" */
 }
 
 
@@ -203,7 +203,7 @@ ion-icon {
   width: 50%;
 }
 
-.circles ul{
+/* .circles ul{
   list-style: none;
 }
 .circles li{
@@ -239,7 +239,7 @@ ion-icon {
   /* background-color: lightpink; */
   top: 36vmin;
   left: 20vmin;
-}
+} */
 
 img{
   max-height: 50vh;
