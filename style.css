@@ -66,20 +66,11 @@ h3{
 }
 
 #increase{
-  /* background-color: mediumvioletred; */
-  /* #E190F0; */
-  /* lavender; */
-  /* used https://cssgradient.io/ */
-  /* height: 100vh; */
   background-color: #FB9D4A;
-  /* background: rgb(255,255,255); */
-  /* background-image: linear-gradient(#FFC7C7, #ff3c3c); */
-  /* background-size: contain; */
-  /* background-attachment: fixed; */
 }
 
 #sources .nav ul{
-  /* background-color: #F0759E; */
+  background-color: #ffdede;
   /* #F962A8; */
 }
 #sources{
